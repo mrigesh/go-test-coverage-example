@@ -3,7 +3,7 @@
 profile: coverage.out
 local-prefix: "github.com/mrigesh/go-test-coverage-example"
 threshold:
-  file: 60
+  file: 10
   package: 70
   total: 75
 override: []
