@@ -4,3 +4,8 @@ package sample
 func Add(a int, b int) int {
 	return a + b
 }
+
+// function to subtract two numbers
+func Subtract(a int, b int) int {
+	return a - b
+}
