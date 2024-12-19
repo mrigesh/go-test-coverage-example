@@ -1,11 +1,11 @@
 name: "Coverage Report"
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths-ignore:
       - "permissions/**"
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths-ignore:
       - "permissions/**"
 permissions:
