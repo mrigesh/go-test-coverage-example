@@ -20,3 +20,21 @@ func TestAdd(t *testing.T) {
 		}
 	}
 }
+func TestSubtract(t *testing.T) {
+	tests := []struct {
+		a, b   int
+		result int
+	}{
+		{1, 1, 0},
+		{3, 2, 1},
+		{-1, -1, 0},
+		{-1, 1, -2},
+		{0, 0, 0},
+	}
+
+	for _, test := range tests {
+		if output := Subtract(test.a, test.b); output != test.result {
+			t.Errorf("Expected %d - %d to equal %d, but got %d", test.a, test.b, test.result, output)
+		}
+	}
+}
